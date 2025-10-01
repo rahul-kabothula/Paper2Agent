@@ -186,7 +186,7 @@ if [[ -f "$MAIN_DIR/.pipeline/06_mcp_done" ]]; then
   STEP_STATUS[mcp]="skipped"
 else
   log_progress 9 "Launch MCP server" "start"
-  bash $SCRIPT_DIR/scripts/06_launch_mcp.sh "$MAIN_DIR" "$repo_name"
+  bash $SCRIPT_DIR/scripts/06_launch_mcp.sh "$MAIN_DIR" "$FOLDER_NAME"
   log_progress 9 "Launch MCP server" "complete"
   STEP_STATUS[mcp]="executed"
 fi
